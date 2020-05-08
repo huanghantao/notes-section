@@ -20,6 +20,8 @@ sudo /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --ssl-key-lo
 
 3、启动wireshark，并配置sslkey文件路径
 
+4、访问网站<https://http2.akamai.com/demo>
+
 ## 测试http2协议升级
 
 `h2`：基于`TLS`协议进行升级。
