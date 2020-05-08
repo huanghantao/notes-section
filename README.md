@@ -2,7 +2,11 @@
 
 记录常用的东西
 
-## wireshark抓取谷歌浏览器的SSL包
+## HTTP2
+
+文档：<https://http2.github.io>
+
+### wireshark抓取谷歌浏览器的SSL包
 
 1、查找谷歌浏览器路径：
 
@@ -22,7 +26,7 @@ sudo /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --ssl-key-lo
 
 4、访问网站<https://http2.akamai.com/demo>
 
-## 测试http2协议升级
+### 测试http2协议升级
 
 `h2`：基于`TLS`协议进行升级。
 
@@ -41,3 +45,7 @@ tcpdump port 80 and host nghttp2.org -w h2c.pcap
 ```bash
 curl http://nghttp2.org --http2 -v
 ```
+
+### Header头部压缩
+
+通过HPACK算法进行压缩。
