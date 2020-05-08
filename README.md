@@ -19,3 +19,23 @@ sudo /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --ssl-key-lo
 ```
 
 3、启动wireshark，并配置sslkey文件路径
+
+## 测试http2协议升级
+
+`h2`：基于`TLS`协议进行升级。
+
+`h2c`：基于`TCP`协议进行升级。（类似于`WebSocket`协议升级）
+
+测试站点: <http://nghttp2.org>
+
+1、通过tcpdump进行抓包
+
+```bash
+tcpdump port 80 and host nghttp2.org -w h2c.pcap
+```
+
+2、通过curl发起http2请求（基于TCP协议升级）
+
+```bash
+curl http://nghttp2.org --http2 -v
+```
