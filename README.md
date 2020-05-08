@@ -49,3 +49,9 @@ curl http://nghttp2.org --http2 -v
 ### Header头部压缩
 
 通过HPACK算法进行压缩。
+
+可以通过`h2load`工具来检验`header`压缩比：
+
+```bash
+h2load https://blog.cloudflare.com -n 2
+```
