@@ -1,6 +1,6 @@
 # notes-section
 
-记录常用的东西
+记录常用的东西（和我的环境强相关，没有`star`的价值，仅仅是个人复制粘贴用的）
 
 ## HTTP2
 
@@ -55,3 +55,7 @@ curl http://nghttp2.org --http2 -v
 ```bash
 h2load https://blog.cloudflare.com -n 2
 ```
+
+## Swoole
+
+
