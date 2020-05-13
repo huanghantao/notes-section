@@ -58,4 +58,12 @@ h2load https://blog.cloudflare.com -n 2
 
 ## Swoole
 
+### 编译libswoole
 
+> 为了正常编译，务必先用`phpize`和`make clean`先清理一下环境。
+
+`MacOS`下：
+
+```bash
+cmake . -Dopenssl_dir=/usr/local/opt/openssl/ -Dbrotli_dir=/usr/local/
+```
