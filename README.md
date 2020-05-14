@@ -67,3 +67,13 @@ h2load https://blog.cloudflare.com -n 2
 ```bash
 cmake . -Dopenssl_dir=/usr/local/opt/openssl/ -Dbrotli_dir=/usr/local/
 ```
+
+## DNS
+
+```bash
+nslookup test.com 127.0.0.1 -port=9502
+```
+
+```bash
+nslookup -type=CNAME test.com 127.0.0.1 -port=9502
+```
