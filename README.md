@@ -77,3 +77,11 @@ nslookup test.com 127.0.0.1 -port=9502
 ```bash
 nslookup -type=CNAME test.com 127.0.0.1 -port=9502
 ```
+
+## WebSocket
+
+工具：<https://github.com/websockets/wscat>
+
+```bash
+npm install -g wscat
+```
