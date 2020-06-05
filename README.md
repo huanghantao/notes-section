@@ -68,6 +68,12 @@ h2load https://blog.cloudflare.com -n 2
 cmake . -Dopenssl_dir=/usr/local/opt/openssl/ -Dbrotli_dir=/usr/local/
 ```
 
+`Linux`下：
+
+```bash
+cmake . -Dopenssl_dir=/usr/local/openssl/
+```
+
 ## DNS
 
 ```bash
@@ -84,4 +90,22 @@ nslookup -type=CNAME test.com 127.0.0.1 -port=9502
 
 ```bash
 npm install -g wscat
+```
+
+## Homebrew
+
+### 切换PHP版本
+
+```bash
+/Users/hantaohuang/.phpbrew/distfiles/php-7.2.31.tar.bz2
+```
+
+```bash
+phpbrew install 7.2.31 \
+    +default +mysql \
+    +iconv="$(brew --prefix libiconv)" \
+    +bz2="$(brew --prefix bzip2)" \
+    +zlib="$(brew --prefix zlib)"
+
+phpbrew install 7.2.31 +default +mysql +bz2=/usr/local/opt/bzip2 +zlib=/usr/local/opt/zlib
 ```
