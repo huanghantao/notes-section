@@ -109,3 +109,7 @@ phpbrew install 7.2.31 \
 
 phpbrew install 7.2.31 +default +mysql +bz2=/usr/local/opt/bzip2 +zlib=/usr/local/opt/zlib
 ```
+
+## 正则表达式验证网站
+
+<https://regex101.com>
