@@ -117,3 +117,11 @@ phpbrew install 7.2.31 +default +mysql +bz2=/usr/local/opt/bzip2 +zlib=/usr/loca
 ## PHP多版本测试网站
 
 <https://3v4l.org>
+
+## curl
+
+### 读json文件
+
+```bash
+curl localhost:3000/api/json -X POST -d @data.json --header "Content-Type: application/json"
+```
