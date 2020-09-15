@@ -125,3 +125,7 @@ phpbrew install 7.2.31 +default +mysql +bz2=/usr/local/opt/bzip2 +zlib=/usr/loca
 ```bash
 curl localhost:3000/api/json -X POST -d @data.json --header "Content-Type: application/json"
 ```
+
+## 破解软件
+
+<http://www.sdifen.com>
