@@ -180,3 +180,10 @@ call plug#end()
 ```
 
 然后，打开一个`PHP`文件，即可调试服务器了。
+
+## 搭建HTTP代理服务器
+
+```bash
+git@github.com:getlantern/http-proxy.git
+go run http_proxy.go
+```
