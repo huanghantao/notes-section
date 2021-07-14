@@ -187,3 +187,13 @@ call plug#end()
 git@github.com:getlantern/http-proxy.git
 go run http_proxy.go
 ```
+
+## 使用host和port操作Docker
+
+因为`Docker`默认是通过`unix socket`来通信的。但是它也支持通过`ip + port`的方式来访问`Docker`。这需要配置`Docker`，有点麻烦，所以我们可以加一个代理：
+
+```bash
+socat TCP-LISTEN:2375,reuseaddr,fork UNIX-CONNECT:/var/run/docker.sock
+```
+
+这样，我们就可以通过访问`2375`端口来访问`Docker`了。
